@@ -1,0 +1,13 @@
+name: PublicFedBudg
+title: PublicFedBudg
+username: javier-mtz-rd
+account: javier-mtz-rd
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10501796
+bundleId: 7919596
+url: https://javier-mtz-rd.shinyapps.io/PublicFedBudg/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: figures/app-example.png|README.md

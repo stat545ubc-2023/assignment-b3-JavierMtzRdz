@@ -1,4 +1,4 @@
-# Load required dataset and packages ----
+# Set up ----
 source(here::here("scripts/set-up.R"))
 
 
