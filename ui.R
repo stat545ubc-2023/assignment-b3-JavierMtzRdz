@@ -31,6 +31,7 @@ bootstrapPage(
                 windowTitle = "Budget Follow-up",
                 layout_sidebar(
                   sidebar =  sidebar(
+                    # Feature: Dynamic Data Processing. The app includes functionality to process the dataset dynamically based on user input. Users can choose the fiscal year and format in which they want to view the expenditure amounts (e.g., Bills, millions, thousands, or dollars).
                     selectInput(
                       "period", label = strong("Fiscal Year / Estimates and Expenditures"), 
                       choices = list(
@@ -66,11 +67,13 @@ bootstrapPage(
                            layout_columns(
                              column(
                                width = 12, 
+                               # Feature: Treemap Visualization. The app has a treemap visualization to represent the Government Expenditure Plan and Main Estimates Composition by Organization and Description. This allows users to explore the budget allocation at different levels.
                                highchartOutput("plot_admin",
                                                height = "740")
                              ),
                              column(
                                width = 12, 
+                               # Feature: Downloadable Table. The treemap is complemented by a downloadable table that dynamically updates based on user interactions. Clicking on different segments of the treemap triggers updates in the table, providing users with detailed information about the selected organization and description. This feature facilitates data sharing, allowing users to utilize the information in other contexts.
                                card(full_screen = TRUE,
                                     card_header(fillable = FALSE,
                                                 "Summary table           ",

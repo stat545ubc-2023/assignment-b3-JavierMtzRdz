@@ -10,7 +10,7 @@ Users can interact with the treemap to navigate through different levels of the 
 
 ## Acknowledgment
 
-The data used in this project is sourced from the Treasury Board of Canada Secretariat's "Estimates 2022-23" available on the [Open Government Portal](https://open.canada.ca/data/en/dataset/a81099a5-f73e-4c92-ba14-0603a00d40df).
+The data used in this project is sourced from the Treasury Board of Canada Secretariat's "Estimates 2022-23," which is available on the [Open Government Portal](https://open.canada.ca/data/en/dataset/a81099a5-f73e-4c92-ba14-0603a00d40df).
 
 ## Shiny App Link
 
@@ -24,6 +24,6 @@ This project was undertaken as part of **Option B: Create your own Shiny app wit
 
 1.  **Treemap Visualization:** The app has a treemap visualization to represent the Government Expenditure Plan and Main Estimates Composition by Organization and Description. This allows users to explore the budget allocation at different levels.
 
-2.  **Downloadable Table:** The treemap is complemented by a downloadable table that dynamically updates based on user interactions. Clicking on different segments of the treemap triggers updates in the table, providing detailed information about the selected organization and description.
+2.  **Downloadable Table:** The treemap is complemented by a downloadable table that dynamically updates based on user interactions. Clicking on different segments of the treemap triggers updates in the table, providing users with detailed information about the selected organization and description. This feature facilitates data sharing, allowing users to utilize the information in other contexts.
 
-3.  **Dynamic Data Processing:** The app includes functionality to dynamically process the dataset based on user input. Users can choose the fiscal year and format in which they want to view the expenditure amounts (e.g., Billions, Millions, Thousands, or Dollars).
+3.  **Dynamic Data Processing:** The app includes functionality to process the dataset dynamically based on user input. Users can choose the fiscal year and format in which they want to view the expenditure amounts (e.g., Bills, millions, thousands, or dollars).
