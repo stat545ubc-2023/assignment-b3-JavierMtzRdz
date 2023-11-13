@@ -6,6 +6,8 @@ source(here::here("scripts/set-up.R"))
 function(input, output, session) {
   
   # Generate processed dataset -----
+  
+  # Feature: Dynamic Data Processing. The app includes functionality to process the dataset dynamically based on user input. Users can choose the fiscal year and format in which they want to view the expenditure amounts (e.g., Bills, millions, thousands, or dollars).
   prcssd_bdgt <- eventReactive(c(input$period,
                                  input$amount_format),
                                {
@@ -98,7 +100,7 @@ function(input, output, session) {
       select(-amount,
              -colors1)
     
-    
+    ### Join color to the categories -----
     
     data_det_hier <- data_det_hier %>%
       left_join(colors1,
@@ -132,6 +134,8 @@ function(input, output, session) {
     
     
     ### Generate treemap -----
+    
+    # Feature: Treemap Visualization. The app has a treemap visualization to represent the Government Expenditure Plan and Main Estimates Composition by Organization and Description. This allows users to explore the budget allocation at different levels.
     
     hchart(data_det_hier,
            type = "treemap",
@@ -259,9 +263,8 @@ function(input, output, session) {
                                   })
   
   
-  # Generate dataset filter with ----
+  # Generate dataset filter with clicks ----
   table_data <- eventReactive(c(prcssd_bdgt(),
-                                # clicked()
                                 clicked()
   ),
   {
@@ -367,6 +370,7 @@ function(input, output, session) {
                                 })
   
   ## Generate exported output ------
+  # Feature: Downloadable Table. The treemap is complemented by a downloadable table that dynamically updates based on user interactions. Clicking on different segments of the treemap triggers updates in the table, providing users with detailed information about the selected organization and description. This feature facilitates data sharing, allowing users to utilize the information in other contexts.
   
   output$download_table <- downloadHandler(
     filename = function() {
