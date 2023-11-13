@@ -4,7 +4,7 @@
 
 The Government Expenditure Shiny App provides a user-friendly interface to explore and understand the distribution of government expenditures across various organizations and descriptions.
 
-Users can interact with the treemap to navigate through different levels of the budget hierarchy, and the connected table ensures that detailed information is readily available. The dynamic data processing feature enhances the app's versatility, allowing users to customize their view of the data.
+Users can interact with the treemap to navigate through different levels of the budget hierarchy and the connected table ensures that detailed information is readily available. The dynamic data processing feature enhances the app's versatility, allowing users to customize their view of the data.
 
 ![](figures/app-example.png)
 
