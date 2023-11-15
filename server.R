@@ -317,7 +317,8 @@ function(input, output, session) {
         
         table <- table %>% 
           summarise(amount = sum(amount),
-                    .by = c(Organization, Description))
+                    .by = c(Organization, Description)) %>% 
+          filter(!!rlang::sym(clicked_lev_var) == clicked$name)
         
       }
       
